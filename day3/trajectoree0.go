@@ -22,7 +22,6 @@ func findTrees(input []string, right int, down int)(int){
 	    if(string(lineRune[index]) == "#"){
 	      count++
 	    }
-	    //fmt.Println(i, x, repeatStr, index, count)
 	    if(i+1 >= int(x)){
 	      repeatStr++
 	      x = math.Floor(float64(len(lineStr)/index))
@@ -46,6 +45,7 @@ func main() {
       text = append(text, scanner.Text())
   }
   file.Close()
+
 	x11 := findTrees(text, 1, 1)
 	x31 := findTrees(text, 3, 1)
 	x51 := findTrees(text, 5, 1)

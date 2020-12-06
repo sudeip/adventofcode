@@ -36,7 +36,7 @@ func main() {
     if(string(lineRune[index]) == "#"){
       count++
     }
-      fmt.Println(i, x, right, index)
+      //fmt.Println(i, x, right, index)
     if(i+1 > int(x)){
       right++
       x = math.Floor(float64(len(lineStr)/index))
