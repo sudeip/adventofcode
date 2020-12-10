@@ -33,9 +33,6 @@ func lastAccumulatorValPart1(lines []string) int {
       lib.Check(err)
       i = i + arg -1
     }
-    if(i<0){
-      break;
-    }
 		if _, exists := m[i]; exists {
 			return accumulator
 		} else {
